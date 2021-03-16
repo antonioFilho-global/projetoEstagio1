@@ -1,6 +1,7 @@
-.navegador nav {
-	background-color: #e8a0f1;
-}
+.navegador nav, footer {
+	background-color: purple;
+	/* background-image: linear-gradient(rgb(237, 199, 247), rgb(255, 255, 255)); */
+} 
 
 #menu{
 	float: right;
@@ -10,14 +11,15 @@
 
 /*Faz auteração da cor quando o mouse passa nos links dentro do menu*/
 #menu a:hover{
-	background-color: #f1e0f3;
+	background-color: rgba(79, 173, 219, .4);
 	color:#0e1a12;	
 }
 
 #main{
 	padding: 50px;
 	/* gradiente de azul */
-	background: linear-gradient(135deg,#35b8b0 0%, #1c799d 100%);
+	/* background: linear-gradient(135deg,#35b8b0 0%, #1c799d 100%); */
+	background-image: linear-gradient(rgb(212, 54, 252), rgb(255, 255, 255));
 }
 
 /* Tirando os espaçamentos padrões de toda 
