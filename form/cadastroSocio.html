@@ -1,0 +1,83 @@
+<!doctype html>
+<html>
+	<!-- o Bootstrap esta na pasta public -->
+	<head>
+		<title>ABC Santa Maria</title>
+		<meta charset="utf-8">
+
+		<!-- CSS -->
+		<link href="../public/css/bootstrap.min.css" rel="stylesheet">
+		<!--icone na aba do navegador -->
+		<link rel="shortcut icon"  href="../public/img/logo.jpg" sizes="32*32" type="imagem/png">
+		<!--Meu CSS -->
+		<link href="../public/css/style.css" rel="stylesheet">
+	</head>
+
+	<body>
+		<!--Definindo como serar exibito conforme diferentes tipos de telas navbar-expand-lg" -->
+		<!--fixed-top fixa o menu no topo 
+			fixed-bottom fixa o menu na base  
+		-->
+		<header class="navegador">
+			<!-- bg-info -->
+			<nav class="navbar navbar-expand-lg fixed-top navbar-inverse navbar-dark rounded-bottom">
+				<a href="#" class="navbar-brand"><img class="rounded" width="90px"  src="../public/img/logo.png"></a>
+				<!--o button criarar o menu com icone dentro da teg span, que abrirar o conteudo da div de id menu,
+				Muito útil em telas menos de smartphones  -->	
+				<button class="navbar-toggler" data-toggle="collapse" data-target="#menu">
+					<span class="navbar-toggler-icon"></span>
+				</button>
+
+				<!-- Links -->
+				<div id="menu" class="collapse navbar-collapse">
+					<!-- tag ul cria lista nao numerada -->
+					<!--ml-md-auto Faz o alinhamento dos links a direita -->
+					<ul class="navbar-nav ml-md-auto">
+						<li class="nav-item active">
+							<a class="nav-link" href="#"><h2>Home</h2></a>
+						</li>
+						<li class="nav-item active">
+							<a class="nav-link" href="#"><h2>Quem Somos</h2></a>
+						</li>
+						<li class="nav-item active">
+							<a class="nav-link" href="#"><h2>Serviços</h2></a>
+						</li>
+						<li class="nav-item active">
+							<a class="nav-link" href="#"><h2>Fale Conosco</h2></a>
+						</li>
+					</ul>
+				</div>
+			</nav>
+		</header>
+		<br><br>
+<!-- #########################Formulário Cadastrar Sócio####################### -->
+		<div id="meio">
+			<div class="container">
+				<center><h2>Cadastro De Sócio</h2></center>
+				<form class="border border-dark rounded">
+					<div class="form-check">
+						<input class="form-check-input" type="radio" name="flexRadioDefault" id="associado">
+						<label class="form-check-label" for="associado">
+							Sócio da Associação:
+						</label>
+					</div> 
+
+					<div class="form-check">
+						<input class="form-check-input" type="radio" name="flexRadioDefault" id="contribuinte" checked>
+						<label class="form-check-label" for="contribuinte">
+							Sócio contribuinte:
+						</label>
+					</div>
+				</form>
+					
+			
+				</form>
+			</div>
+		</div>
+
+
+		<!-- JAVASCRIPT -->
+		<script src="../public/js/jquery.js"></script>
+		<script src="../public/js/bootstrap.bundle.min.js"></script>		
+	</body>
+</html>

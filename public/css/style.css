@@ -11,7 +11,7 @@
 
 /*Faz auteração da cor quando o mouse passa nos links dentro do menu*/
 #menu a:hover{
-	background-color: rgba(79, 173, 219, .4);
+	background-color: rgba(245, 187, 235, 0.4);
 	color:#0e1a12;	
 }
 
@@ -20,6 +20,10 @@
 	/* gradiente de azul */
 	/* background: linear-gradient(135deg,#35b8b0 0%, #1c799d 100%); */
 	background-image: linear-gradient(rgb(212, 54, 252), rgb(255, 255, 255));
+}
+/* usado no formulário, para que nao fique em baixo da nav  */
+#meio {
+	padding: 50px;
 }
 
 /* Tirando os espaçamentos padrões de toda 
