@@ -55,22 +55,169 @@
 			<div class="container">
 				<center><h2>Cadastro De Sócio</h2></center>
 				<form class="border border-dark rounded">
+					<!-- radio -->
 					<div class="form-check">
+						<label class="form-check-label" for="associado"> Sócio da Associação:</label>
+						&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 						<input class="form-check-input" type="radio" name="flexRadioDefault" id="associado">
-						<label class="form-check-label" for="associado">
-							Sócio da Associação:
-						</label>
 					</div> 
 
 					<div class="form-check">
+						<label class="form-check-label" for="contribuinte"> Sócio contribuinte:</label>
+						&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 						<input class="form-check-input" type="radio" name="flexRadioDefault" id="contribuinte" checked>
-						<label class="form-check-label" for="contribuinte">
-							Sócio contribuinte:
-						</label>
 					</div>
-				</form>
-					
-			
+					<!-- radio -->
+
+					<div class="form-row">
+						<div class="form-group col-md-5">
+						  <label for="inputNome">Nome:</label>
+						  <input type="text" class="form-control" id="inputNome" placeholder="Nome">
+						</div>
+						<div class="form-group col-md-5">
+						  <label for="inputApelido">Apelido:</label>
+						  <input type="text" class="form-control" id="inputApelido" placeholder="Apelido">
+						</div>
+					</div>
+
+					<div class="form-row">
+						<div class="form-group col-md-5">
+						  <label for="inputDataNascimento">Data de Nascimento:</label>
+						  <input type="date" class="form-control" id="inputDataNascimento">
+						</div>
+
+						<div class="form-group  col-md-5">
+							<label for="inputEstadoCivil">Estado Civil:</label>
+							<select class="form-control" id="inputEstadoCivil">
+								<!-- <option value=""> </option> pode ser usado na hora de validar campo em branco -->
+								<option value="solteiro">Solteiro (a)</option>
+								<option value="casado"> Casado (a)</option>
+								<option value="divorciado">Divorciado (a)</option>
+								<option value="viuvo">Viúvo (a)</option>
+							</select>
+						</div>
+					</div>
+
+					<div class="form-row">
+						<div class="form-group col-md-4">
+						  <label for="inputRg">RG:</label>
+						  <input type="text" class="form-control" id="inputRg">
+						</div>
+
+						<div class="form-group col-md-4">
+							<label for="inputOrgaoExpedidor">Órgão Expedidor:</label>
+							<input type="text" class="form-control" id="inputOrgaoExpedidor">
+						</div>
+
+						<div class="form-group col-md-4">
+							<label for="inputCpf">CPF:</label>
+							<input type="text" class="form-control" id="inputCpf">
+						</div>
+					</div>
+
+					<div class="form-row">
+						<div class="form-group col-md-5">
+						  <label for="inputNomeConjuge">Nome do Cônjuge:</label>
+						  <input type="text" class="form-control" id="inputNomeConjuge">
+						</div>
+					</div>
+
+					<!--Dependentes -->	
+					<!-- resolução mais completa https://velhobit.com.br/programacao/como-adicionar-e-remover-dinamicamente-um-elemento-html-a-partir-de-um-input-javascript-puro.html# -->
+
+					<!-- resolução mais simples--> 
+					<h3>Dependentes:</h3>
+					<!-- 1° -->
+					<div class="form-row"> 
+						<div class="form-group col-md-4">
+						  <label for="inputNomeDependente1">Nome:</label>
+						  <input type="text" class="form-control" id="inputNomeDependente1">
+						</div>
+
+						<div class="form-group col-md-4">
+							<label for="inputDataNascimentoDependente1">Data de Nascimento:</label>
+							<input type="date" class="form-control" id="inputDataNascimentoDependente1">
+						</div>
+
+						<div class="form-group col-md-4">
+							<label for="inputParentesco1">Parentesco:</label>
+							<input type="text" class="form-control" id="inputParentesco1">
+						</div>
+					</div>
+
+					<!-- 2° -->
+					<div class="form-row"> 
+						<div class="form-group col-md-4">
+						  <label for="inputNomeDependente2">Nome:</label>
+						  <input type="text" class="form-control" id="inputNomeDependente2">
+						</div>
+
+						<div class="form-group col-md-4">
+							<label for="inputDataNascimentoDependente2">Data de Nascimento:</label>
+							<input type="date" class="form-control" id="inputDataNascimentoDependente2">
+						</div>
+
+						<div class="form-group col-md-4">
+							<label for="inputParentesco2">Parentesco:</label>
+							<input type="text" class="form-control" id="inputParentesco2">
+						</div>
+					</div>
+
+					<!-- 3° -->
+					<div class="form-row"> 
+						<div class="form-group col-md-4">
+						  <label for="inputNomeDependente3">Nome:</label>
+						  <input type="text" class="form-control" id="inputNomeDependente3">
+						</div>
+
+						<div class="form-group col-md-4">
+							<label for="inputDataNascimentoDependente3">Data de Nascimento:</label>
+							<input type="date" class="form-control" id="inputDataNascimentoDependente3">
+						</div>
+
+						<div class="form-group col-md-4">
+							<label for="inputParentesco3">Parentesco:</label>
+							<input type="text" class="form-control" id="inputParentesco3">
+						</div>
+					</div>
+
+					<!-- 4° -->
+					<div class="form-row"> 
+						<div class="form-group col-md-4">
+						  <label for="inputNomeDependente4">Nome:</label>
+						  <input type="text" class="form-control" id="inputNomeDependente4">
+						</div>
+
+						<div class="form-group col-md-4">
+							<label for="inputDataNascimentoDependente4">Data de Nascimento:</label>
+							<input type="date" class="form-control" id="inputDataNascimentoDependente4">
+						</div>
+
+						<div class="form-group col-md-4">
+							<label for="inputParentesco4">Parentesco:</label>
+							<input type="text" class="form-control" id="inputParentesco4">
+						</div>
+					</div>
+
+					<!-- 5° -->
+					<div class="form-row"> 
+						<div class="form-group col-md-4">
+						  <label for="inputNomeDependente5">Nome:</label>
+						  <input type="text" class="form-control" id="inputNomeDependente5">
+						</div>
+
+						<div class="form-group col-md-4">
+							<label for="inputDataNascimentoDependente5">Data de Nascimento:</label>
+							<input type="date" class="form-control" id="inputDataNascimentoDependente5">
+						</div>
+
+						<div class="form-group col-md-4">
+							<label for="inputParentesco5">Parentesco:</label>
+							<input type="text" class="form-control" id="inputParentesco5">
+						</div>
+					</div>
+
+					<button type="submit" class="btn btn-primary">Salvar</button>
 				</form>
 			</div>
 		</div>
