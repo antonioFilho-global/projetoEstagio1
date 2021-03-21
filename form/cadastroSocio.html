@@ -51,14 +51,14 @@
 		</header>
 		<br><br>
 <!-- #########################Formulário Cadastrar Sócio####################### -->
-		<div id="meio">
+		<div id="meio"">
 			<div class="container">
 				<center><h2>Cadastro De Sócio</h2></center>
-				<form class="border border-dark rounded">
+				<form class="border border-dark rounded shadow-lg p-3 mb-5 bg-white rounded">
 					<!-- radio -->
 					<div class="form-check">
 						<label class="form-check-label" for="associado"> Sócio da Associação:</label>
-						&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+						&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	
 						<input class="form-check-input" type="radio" name="flexRadioDefault" id="associado">
 					</div> 
 
@@ -68,7 +68,7 @@
 						<input class="form-check-input" type="radio" name="flexRadioDefault" id="contribuinte" checked>
 					</div>
 					<!-- radio -->
-
+					<h3>Dados Pessoais:</h3>
 					<div class="form-row">
 						<div class="form-group col-md-5">
 						  <label for="inputNome">Nome:</label>
@@ -116,6 +116,53 @@
 					</div>
 
 					<div class="form-row">
+						<div class="form-group col-md-4">
+						  <label for="inputProfissao">Profissão:</label>
+						  <input type="text" class="form-control" id="inputProfissao">
+						</div>
+
+						<!-- desenvolver uma máscara para o número de telefone -->
+						<div class="form-group col-md-4">
+							<label for="inputContato1">Contato:</label>
+							<input type="text" class="form-control" id="inputContato1">
+						</div>
+						<!-- desenvolver uma máscara para o número de telefone -->
+						<div class="form-group col-md-4">
+							<label for="inputContato2">Contato:</label>
+							<input type="text" class="form-control" id="inputContato2">
+						</div>
+					</div>
+
+					<div class="form-row">
+						<div class="form-group col-md-4">
+						  <label for="inputEndereco">Endereço:</label>
+						  <input type="text" class="form-control" id="inputEndereco">
+						</div>
+
+						<div class="form-group col-md-4">
+							<label for="inputNumero">Número:</label>
+							<input type="text" class="form-control" id="inputNumero">
+						</div>
+						
+						<div class="form-group col-md-4">
+							<label for="inputBairro">Bairro:</label>
+							<input type="text" class="form-control" id="inputBairro">
+						</div>
+					</div>
+
+					<div class="form-row">
+						<div class="form-group col-md-4">
+						  <label for="inputEndereco">Cidade:</label>
+						  <input type="text" class="form-control" id="inputEndereco">
+						</div>
+
+						<div class="form-group col-md-4">
+							<label for="inputCep">Cep:</label>
+							<input type="text" class="form-control" id="inputCep">
+						</div>
+					</div>
+
+					<div class="form-row">
 						<div class="form-group col-md-5">
 						  <label for="inputNomeConjuge">Nome do Cônjuge:</label>
 						  <input type="text" class="form-control" id="inputNomeConjuge">
@@ -139,9 +186,15 @@
 							<input type="date" class="form-control" id="inputDataNascimentoDependente1">
 						</div>
 
-						<div class="form-group col-md-4">
+						<div class="form-group  col-md-4">
 							<label for="inputParentesco1">Parentesco:</label>
-							<input type="text" class="form-control" id="inputParentesco1">
+							<select class="form-control" id="inputParentesco1">
+								<option value=" "> </option>
+								<option value="filho(a)">Filho(a)</option>
+								<option value="neto(a)">Neto(a)</option>
+								<option value="sobrinho(a)">Sobrinho(a)</option>
+								<option value="outros">Outros</option>
+							</select>
 						</div>
 					</div>
 
@@ -157,9 +210,15 @@
 							<input type="date" class="form-control" id="inputDataNascimentoDependente2">
 						</div>
 
-						<div class="form-group col-md-4">
+						<div class="form-group  col-md-4">
 							<label for="inputParentesco2">Parentesco:</label>
-							<input type="text" class="form-control" id="inputParentesco2">
+							<select class="form-control" id="inputParentesco2">
+								<option value=" "> </option>
+								<option value="filho(a)">Filho(a)</option>
+								<option value="neto(a)">Neto(a)</option>
+								<option value="sobrinho(a)">Sobrinho(a)</option>
+								<option value="outros">Outros</option>
+							</select>
 						</div>
 					</div>
 
@@ -175,9 +234,15 @@
 							<input type="date" class="form-control" id="inputDataNascimentoDependente3">
 						</div>
 
-						<div class="form-group col-md-4">
+						<div class="form-group  col-md-4">
 							<label for="inputParentesco3">Parentesco:</label>
-							<input type="text" class="form-control" id="inputParentesco3">
+							<select class="form-control" id="inputParentesco3">
+								<option value=" "> </option>
+								<option value="filho(a)">Filho(a)</option>
+								<option value="neto(a)">Neto(a)</option>
+								<option value="sobrinho(a)">Sobrinho(a)</option>
+								<option value="outros">Outros</option>
+							</select>
 						</div>
 					</div>
 
@@ -193,9 +258,15 @@
 							<input type="date" class="form-control" id="inputDataNascimentoDependente4">
 						</div>
 
-						<div class="form-group col-md-4">
+						<div class="form-group  col-md-4">
 							<label for="inputParentesco4">Parentesco:</label>
-							<input type="text" class="form-control" id="inputParentesco4">
+							<select class="form-control" id="inputParentesco4">
+								<option value=" "> </option>
+								<option value="filho(a)">Filho(a)</option>
+								<option value="neto(a)">Neto(a)</option>
+								<option value="sobrinho(a)">Sobrinho(a)</option>
+								<option value="outros">Outros</option>
+							</select>
 						</div>
 					</div>
 
@@ -211,9 +282,15 @@
 							<input type="date" class="form-control" id="inputDataNascimentoDependente5">
 						</div>
 
-						<div class="form-group col-md-4">
+						<div class="form-group  col-md-4">
 							<label for="inputParentesco5">Parentesco:</label>
-							<input type="text" class="form-control" id="inputParentesco5">
+							<select class="form-control" id="inputParentesco5">
+								<option value=" "> </option>
+								<option value="filho(a)">Filho(a)</option>
+								<option value="neto(a)">Neto(a)</option>
+								<option value="sobrinho(a)">Sobrinho(a)</option>
+								<option value="outros">Outros</option>
+							</select>
 						</div>
 					</div>
 
